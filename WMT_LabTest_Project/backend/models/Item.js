@@ -27,6 +27,11 @@ const itemSchema = new mongoose.Schema(
       default: "",
       trim: true,
     },
+    brandName: {
+      type: String,
+      required: [true, "Brand name is required"],
+      trim: true,
+    },
   },
   { timestamps: true }
 );
